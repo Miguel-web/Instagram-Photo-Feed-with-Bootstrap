@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <title>Instagram-post-bootstrap</title>
+</head>
+
+<style>
+  .icons {
+     font-size: 25px;
+  }
+.iconsinstagram {
+    font-size: 35px;
+}
+h3 {
+  font-family: 'Pacifico', cursive;
+}
+h1, p, h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.iconsmodal {
+  font-size: 25px;
+}
+.logout {
+  color: rgb(190, 61, 61);
+}
+</style>
+
+<body>
+
+    <!--Contenedor-->
+
+  <div class="d-flex justify-content-end mx-5 my-5">
+
+    <i class="iconsinstagram fa-brands fa-instagram"></i><h3 class="me-auto mt-1 ms-1">Instragram</h3>
+    
+    <!-- Button trigger modal -->
+
+    <div class="dropdown">
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Create a new post
+  </button>
+    </div>
+    <!-- Modal -->
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Created a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3>Caption:</h3>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Add the caption of your post here</label>
+          </div>
+          <button type="button" class="btn btn-light"><i class="iconsmodal fa-solid fa-camera"></i></button><button type="button" class="btn btn-light"><i class="iconsmodal fa-solid fa-location-dot"></i></button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Dropdown -->
+
+  <button type="button" class="btn btn-dark dropdown-toggle ms-3" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-dark">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="logout dropdown-item" href="#">Log out</a></li>
+  </ul>
+</div>
+
+      <!-- nav,tab -->
+
+      
+      <ul class="nav justify-content-center mt-5 nav-pills " id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="icons fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="icons fa-solid fa-id-badge"></i></button>
+        </li>
+      </ul>
+      
+      <!-- img collage -->
+
+      <div class="mt-5 ms-4 me-4 my-3 tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <img src="1.png" class="mb-2 img-fluid float-start" alt="...">
+          <img src="2.png" class="mb-2 ms-2 img-fluid float" alt="...">
+          <img src="3.png" class="mb-2 img-fluid float-end" alt="...">
+          <img src="4.png" class="mb-2 img-fluid float-start" alt="...">
+          <img src="5.png" class="mb-2 ms-2 img-fluid float" alt="...">
+          <img src="6.png" class="mb-2 img-fluid float-end" alt="...">
+          <img src="7.png" class="mb-2 img-fluid float-start" alt="...">
+          <img src="8.png" class="mb-2 ms-2 img-fluid float" alt="...">
+          <img src="9.png" class="mb-2 img-fluid float-end" alt="...">
+        </div>
+      </div>
+
+        <!-- cards 1 -->
+        
+        <div class="d-flex justify-content-center">
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="mb-3 card" style="width: 30rem;">
+
+            <div class="d-flex justify-content"> 
+            <h1 class="ms-3">Vacaciones</h1> 
+            <h4 class="mt-2 ms-auto me-3"><strong>1/3</strong></h4>
+            </div>
+
+            <img src="7.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title"><strong> 500k Likes </strong></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat exercitationem placeat et ad, id obcaecati. Provident minima beatae numquam libero assumenda necessitatibus voluptates at, nisi, accusantium impedit sapiente iusto molestias?</p>
+            </div>
+          </div>
+          
+          <!-- card 2-->
+          <div class="mb-3 card" style="width: 30rem;">
+
+            <div class="d-flex justify-content"> 
+            <h1 class="ms-3">Juegos</h1> 
+            <h4 class="mt-2 ms-auto me-3"><strong>2/3</strong></h4>
+            </div>
+
+            <img src="8.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title"><strong> 12k Likes </strong></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat exercitationem placeat et ad, id obcaecati. Provident minima beatae numquam libero assumenda necessitatibus voluptates at, nisi, accusantium impedit sapiente iusto molestias?</p>
+            </div>
+          </div>
+
+          <!-- card 3-->
+
+          <div class="mb-3 card" style="width: 30rem;">
+
+            <div class="d-flex justify-content"> 
+            <h1 class="ms-3">3D Games</h1> 
+            <h4 class="mt-2 ms-auto me-3"><strong>3/3</strong></h4>
+            </div>
+
+            <img src="9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title"><strong> 248k Likes </strong></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat exercitationem placeat et ad, id obcaecati. Provident minima beatae numquam libero assumenda necessitatibus voluptates at, nisi, accusantium impedit sapiente iusto molestias?</p>
+            </div>
+          </div>
+        </div>
+        
+
+
+        </div>
+      </div>
+   
+        <!-- JavaScript Bundle with Popper -->
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e7f7d9654d.js" crossorigin="anonymous"></script>
+      </body>
+</html>
